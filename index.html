@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>React - Adding State to Components</title>
+    <title>React example</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script src="./js/react.min.js"></script>
     <script src="./js/react-dom.min.js"></script>
@@ -105,7 +105,7 @@
             render: function() {
                 return (
                     <div>
-                        <button onClick={this.add.bind(null, 'Something to remember')} className="button-info create">Add New</button>
+                        <button onClick={this.add.bind(null, 'You can edit/remove this.')} className="button-info create">Add New</button>
                         <div className="board">
                             {this.state.comments.map(this.eachComment)}
                         </div>
